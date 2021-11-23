@@ -15,11 +15,11 @@ Ich hab mir dafür die damals aktuelle futurezone Website ausgesucht.
 
 Grundseite
 
-### main.css
+### css/main.css
 
 ALLE Stylings der Seite, nachdem der Prof. das als voraussetzung gegeben hat
 
-### main.js
+### js/main.js
 
 Ähnlich wie bei main.css hat der Prof darauf bestanden, dass man alles in einem File hat.
 
