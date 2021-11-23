@@ -1,0 +1,34 @@
+{
+  "recent": [
+    {
+      "Category": "SCIENCE",
+      "Title": "Rätsel um Galaxie aus 99,9 Prozent dunkler Materie gelöst",
+      "Description": "Niederländische Forscher haben die Kugelsternhaufen um die Galaxie erneut gezählt.",
+      "Image": "img/df44-bw_1024.jpg"
+    },
+    {
+      "Category": "PRODUKTE",
+      "Title": "iPhone 12 ist da: Das können die neuen Modelle",
+      "Description": "Apple hat am Dienstag das iPhone 12 sowie das iPhone 12 Pro vorgestellt.",
+      "Image": "img/iphone12.jpg"
+    },
+    {
+      "Category": "MYFUZO",
+      "Title": "futurezone award 2020: Das sind die Nominierten",
+      "Description": "Die futurezone kürt auch in diesem Jahr die besten Projekte und Ideen des Jahres. Jetzt stehen die Finalisten fest.",
+      "Image": "img/46-168010593.jpg"
+    },
+    {
+      "Category": "Digital Life",
+      "Title": "Das steckt hinter den seltsamen Codes auf Amazon-Paketen",
+      "Description": "Von A1 bis E6: Fast jeder Karton einer Amazon-Sendung ist mit so einer Zeichen-Kombination versehen.",
+      "Image": "img/amazon.jpg"
+    },
+    {
+      "Category": "SCIENCE",
+      "Title": "Einfacher Trick macht Solarzellen doppelt so effektiv",
+      "Description": "Forscher haben einen simplen Weg gefunden, mit dem Solarzellen um 125 Prozent mehr Licht einfangen.",
+      "Image": "img/solarzellen.jpg"
+    }
+  ]
+}

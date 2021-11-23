@@ -1,0 +1,29 @@
+{
+  "main": [
+    {
+      "Category": "SCIENCE",
+      "Title": "Rätsel um Galaxie aus 99,9 Prozent dunkler Materie gelöst",
+      "Image": "img/df44-bw_1024.jpg"
+    },
+    {
+      "Category": "PRODUKTE",
+      "Title": "iPhone 12 ist da: Das können die neuen Modelle",
+      "Image": "img/iphone12.jpg"
+    },
+    {
+      "Category": "MYFUZO",
+      "Title": "futurezone award 2020: Das sind die Nominierten",
+      "Image": "img/46-168010593.jpg"
+    },
+    {
+      "Category": "Digital Life",
+      "Title": "Das steckt hinter den seltsamen Codes auf Amazon-Paketen",
+      "Image": "img/amazon.jpg"
+    },
+    {
+      "Category": "SCIENCE",
+      "Title": "Einfacher Trick macht Solarzellen doppelt so effektiv",
+      "Image": "img/solarzellen.jpg"
+    }
+  ]
+}

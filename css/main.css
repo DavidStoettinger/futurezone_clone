@@ -1,0 +1,816 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+@font-face {
+  font-family: Din;
+  font-weight: 600;
+  src: url(../fonts/DINRoundWeb-Medium.eot);
+  src: url(../fonts/DINRoundWeb-Medium.eot), url(../fonts/DINRoundWeb-Medium.woff) format("woff"), url(../fonts/DINRoundComp-Medium.ttf) format("truetype")
+}
+@font-face {
+  font-family: Din;
+  font-weight: 400;
+  src: url(../fonts/DINRoundWeb.eot);
+  src: url(../fonts/DINRoundWeb.eot), url(../fonts/DINRoundWeb.woff) format("woff"), url(../fonts/DINRoundComp.ttf) format("truetype")
+}
+
+body {
+  background-color: #f3f3f3;
+  /*
+  is a total width of 50 rem if max-width = 49.775; official width 58.25
+   */
+  max-width: 58rem;
+  padding-top: 0.125rem;
+  padding-left: 0.125rem;
+  padding-right: 0.125rem;
+  font-family: Din, sans, sans, sans-serif;
+}
+
+/*
+The border in the body is just to clarify the width of it
+*/
+
+main{
+  max-width: 100%;
+}
+
+/* I try to name all my classes with the scheme: <Place of occurrence><Tag><Description> -> headerImgRight = the right image in the header*/
+/*
+Header:
+========================================================================== */
+header{
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  background-color: #ffffff;
+  height: 3.5rem;
+  border-radius: 0.25rem;
+  max-width: 100%;
+  border: 0.1rem solid #c8c8c8;
+}
+
+/*Upper Div*/
+.headerDiv1{
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  height: 3.5rem;
+}
+
+.headerImgLeft2Div{
+  display: none;
+}
+
+.headerImgRight{
+  margin-right: 0.5rem;
+}
+
+.headerImgCenter{
+  /*Übung 3 Task 1*/
+  opacity: 0.2;
+  height: 100%;
+}
+
+.headerImgLeft1{
+  margin-right: 0.5rem;
+  display: inherit;
+}
+.headerImgRightDiv{
+  display: flex;
+}
+
+.headerDiv1P{
+  display:none;
+}
+
+
+
+/*lower Div*/
+.headerDiv2{
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  position:fixed;
+  padding:0;
+  margin:0;
+
+  top:0;
+  left:0;
+  /*is dimgrey with a opacity of 0.5*/
+  background-color: rgba(105, 105, 105, 0.5);
+
+  display: none;
+  flex-direction: row-reverse;
+}
+.headerDiv2Menu{
+  background-color: #ffffff;
+  width: 45%;
+  overflow-y: auto;
+  border-left: 0.1rem solid #c8c8c8;
+}
+.BurgerImgDiv{
+  display: flex;
+  flex-direction: row-reverse;
+  border-bottom: 0.1rem solid #c8c8c8;
+}
+
+.headerDiv2Menu p{
+  border-bottom: 0.1rem solid #c8c8c8;
+  margin:0.025rem;
+  padding: 0.5rem;
+}
+
+.headerDiv2Menu a{
+  border-bottom: 0.1rem solid #c8c8c8;
+  margin:0.025rem;
+  padding: 0.5rem;
+}
+
+
+.BurgerImg{
+  padding: 0.5rem;
+  width:2.5rem;
+}
+.headerDiv2Menu p{
+  display: inherit;
+}
+
+
+.BurgerKatPrioDiv a{
+  display: inherit;
+}
+a.BurgerMore{
+  display: none;
+}
+.BurgerKatPrioDiv{
+  display: inherit;
+}
+
+/*
+Wie in der E-Mail vom 25.11 erwähnt, ist dies ein Fehler im validator
+https://css-tricks.com/almanac/properties/a/all/
+*/
+p.BurgerKatSearch{
+  all:revert;
+  margin:0;
+}
+img.BurgerKatSearch{
+  all:revert;
+}
+div.BurgerKatSearch{
+  border-bottom: 0.1rem solid #c8c8c8;
+  margin:0.025rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+/*Search*/
+.headerSearch{
+  display: none;
+  width: 100%;
+  max-width: 100%;
+  flex-direction: row-reverse;
+  margin-bottom: 0.25rem;
+  margin-top:0.5rem;
+}
+
+.headerSearch button{
+  border-radius: 0.125rem;
+  border: 0.1rem solid #c8c8c8;
+  background-color: white;
+  margin-left: 0.125rem;
+  height: 100%;
+}
+
+.headerSearch input{
+  flex-grow: 1;
+  border-radius: 0.125rem;
+  border: 0.1rem solid #c8c8c8;
+  background-color: white;
+}
+
+.headerSearchDiv {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainSearch{
+  margin-top: 0.5rem;
+  max-width: 100%;
+  border-radius: 0.25rem;
+  border: 0.1rem solid #c8c8c8;
+  background-color: white;
+  display: none;
+  flex-direction: column;
+}
+
+article.searchArticle{
+
+  margin-left:0.25rem;
+  margin-right:0.25rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 0.1rem solid #c8c8c8;
+}
+
+p.searchArticle{
+  padding-right: 0.125rem;
+}
+
+div.autocompleteItems {
+  border: 0.1rem solid #c8c8c8;
+  background-color: white;
+}
+
+/*
+Main Article -> Mobile prio
+ ========================================================================== */
+main{
+  margin-top: 0.75rem;
+  max-width: 100%;
+
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.mainArticleBig{
+  max-width: 100%;
+  border-radius: 0.25rem;
+  border: 0.1rem solid #c8c8c8;
+  background-color: white;
+  margin-bottom: 0.5rem;
+}
+
+
+.mainArticleBigImg{
+  width: 100%;
+  max-width:100%;
+  border-radius: 0.25rem;
+  border-bottom: 0.001rem solid #c8c8c8;
+}
+.mainArticleBigPKategorie{
+  padding-left:0.5rem;
+  padding-top:0.5rem;
+  padding-bottom: 0.125rem;
+  color:red;
+}
+.mainArticleBigH2{
+  padding-left: 0.5rem;
+  padding-top:0.125rem;
+  padding-bottom: 0.125rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.mainFlex{
+  display: flex;
+  flex-direction: column-reverse;
+  max-width: 100%;
+}
+
+.mainSide{
+  display: flex;
+  flex-direction: column;
+
+}
+.mainColumn{
+  max-width: 100%;
+}
+
+
+/*
+Section News -> Mobile prio
+ */
+
+.sectionNews{
+  background-color: white;
+  border-radius: 0.25rem;
+  border: 0.1rem solid #c8c8c8;
+
+  /*
+  https://stackoverflow.com/questions/49016145/how-create-solid-rainbow-border-with-css
+   */
+  background-image: repeating-linear-gradient(to right,
+  #c4e17f 0%, #c4e17f 12.5%,
+  #f7fdca 12.5%, #f7fdca 25%,
+  #fad071 25%, #fad071 37.5%,
+  #f0766b 37.5%, #f0766b 50%,
+  #db9dbe 50%, #db9dbe 62.5%,
+  #c49cdf 62.5%, #c49cdf 75%,
+  #6599e2 75%, #6599e2 87.5%,
+  #61c2e4 87.5%, #61c2e4 100%);
+  background-size: 100% 0.5rem;
+  background-repeat:no-repeat;
+}
+div.sectionNewsHeaderDiv{
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  margin-left:0.25rem;
+  margin-right:0.25rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  border-bottom: 0.1rem solid #c8c8c8;
+  padding-bottom: 0.25rem;
+}
+article.sectionNewsArticle{
+
+  margin-left:0.25rem;
+  margin-right:0.25rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 0.1rem solid #c8c8c8;
+}
+div.sectionNewsArticleDiv{
+
+  display: flex;
+  justify-content: space-between;
+}
+p.sectionNewsP{
+  color:red;
+}
+h3.sectionNewsH2{
+
+}
+img.sectionNewsImg{
+  max-width:35%;
+  margin: 0.125rem;
+}
+
+p.sectionNewsPDescription{
+  padding-right: 0.125rem;
+}
+
+.mainSectionArticleBig{
+  max-width: 100%;
+  border-radius: 0.25rem;
+  border: 0.1rem solid #c8c8c8;
+  background-color: white;
+  margin-bottom: 0.5rem;
+}
+
+.mainSectionPCat{
+  display: none;
+}
+
+section.mainSideNewSection{
+  margin-top: 0.75rem;
+  margin-bottom: 0.25rem;
+  max-width: 100%;
+  border-radius: 0.25rem;
+  border: 0.1rem solid #c8c8c8;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.FeatureArticle{
+  border-left: 0.25rem solid white;
+  border-bottom: 0.1rem solid #c8c8c8;
+  padding-left: 0.5rem;
+  max-width: 100%;
+}
+
+.FeatureArticleCat{
+  margin-top:0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.FeatureArticleH{
+  margin-top: 0.25rem;
+}
+
+.FeatureHeader{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-bottom: 0.1rem solid #c8c8c8;
+}
+
+.FeatureHeaderH{
+  margin:0;
+  padding: 0.5rem;
+  border-bottom: 0.25rem solid white;
+}
+.FeatureHeaderH1{
+  border-bottom-color: black;
+}
+
+.FeatureArticleGroup2{
+  display: none;
+}
+.FeatureArticleGroup3{
+  display: none;
+}
+
+.FeatureMore{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.FeatureMoreButton{
+  padding: 0.5rem;
+  border-radius: 0.75rem;
+  border: 0.1rem solid #464646;
+  background-color: white;
+}
+
+/*Desktop*/
+@media only screen and (min-width: 37.5rem){
+  body{
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0;
+  }
+
+  header{
+    height: 5.5rem;
+    max-height: inherit;
+    position: sticky;
+    top: 0;
+  }
+
+  .headerDiv1{
+    flex-direction: row-reverse;
+  }
+
+  /* attempt to center img and p*/
+  .headerDiv1P{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:0;
+  }
+  .headerImgLeft2Div{
+    display: flex;
+  }
+  .headerImgRight{
+    margin-right: inherit;
+  }
+  .headerImgLeft1{
+    display: none;
+  }
+
+  .headerDiv2{
+    /*
+    Wie in der E-Mail vom 25.11 erwähnt, ist dies ein Fehler im validator
+    https://css-tricks.com/almanac/properties/a/all/
+    */
+    all: revert;
+    max-width: 100%;
+    margin-bottom: 0.25rem;
+  }
+  .headerDiv2Menu{
+    all: revert;
+    max-width: 100%;
+  }
+  .BurgerImgDiv{
+    display: none;
+  }
+  .headerDiv2Menu p{
+    margin-top: 0;
+    max-width: 100%;
+    display: none;
+    border:none;
+  }
+
+  .BurgerKatPrioDiv a{
+    border: 0.1rem solid white;
+    color: rgba(0, 0, 0, 1);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-grow: 1;
+    text-align:center;
+    padding: 0.25rem 0 0;
+
+  }
+  .BurgerKatPrioDiv p{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .BurgerKatPrioDiv{
+    margin-top: 0.25rem;
+    max-width: 100%;
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-top: 0.1rem solid #c8c8c8;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+  a.BurgerKatSearch{
+    display: none;
+  }
+  img.BurgerKatSearch{
+    display: none;
+  }
+
+  div.BurgerKatSearch{
+    display: none;
+  }
+
+  .headerSearch{
+    margin-top: 0;
+  }
+
+  .mainFlex{
+    flex-direction: row;
+  }
+  .mainColumn{
+    width: 70%;
+    max-width: 70%;
+  }
+  .mainSide{
+    width: 30%;
+    max-width: 30%;
+    padding-right: 0.25rem;
+  }
+  .mainDivArticleBig2{
+    display: flex;
+  }
+  .mainArticleBig p{
+    display: none;
+  }
+  .mainArticleBig{
+
+    margin-left: 0.125rem;
+  }
+  .mainDivArticleBig2 article{
+    max-width: 50%;
+    width: 100%;
+  }
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+

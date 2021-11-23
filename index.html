@@ -1,0 +1,269 @@
+<!doctype html>
+<html class="no-js" lang="de">
+
+<head>
+  <meta charset="utf-8">
+  <title>futurezone</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+<!-- Add your site or application content here -->
+
+<header id="header">
+  <div class="headerDiv1">
+    <div class="headerImgRightDiv">
+      <img class="headerImgRight" src="img/contact_page-24px.svg" alt="">
+      <p class="headerDiv1P"><b>Anmelden</b></p>
+    </div>
+
+    <img class="headerImgCenter" src="https://futurezone.at/assets/futurezoneat/logos/header.svg" alt="futurezone">
+    <!-- probably not going to download it -->
+
+
+    <img class="headerImgLeft1 burgerMenuButton" src="img/reorder-24px.svg" alt="">
+    <div class="headerImgLeft2Div searchBtnClickable">
+      <img class="headerImgLeft2" src="img/search-24px.svg" alt="">
+      <p class="headerDiv1P"><b>Suche</b></p>
+    </div>
+  </div>
+
+  <div class="headerDiv2">
+    <div class="headerDiv2Menu">
+      <div class="BurgerImgDiv">
+        <img class="BurgerImg burgerMenuButton" src="img/clear-24px.svg" alt="">
+      </div>
+      <nav class="BurgerKatPrioDiv">
+        <div class="BurgerKatSearch searchBtnClickable">
+          <img class="BurgerKatSearch" src="img/search-24px.svg" alt="">
+          <p class="BurgerKatSearch">Suche</p>
+        </div>
+        <a class="BurgerKatPrioA">Netzpolitik</a>
+        <a class="BurgerKatPrioA">B2B</a>
+        <a class="BurgerKatPrioA">Produkte</a>
+        <a class="BurgerKatPrioA">Digital Life</a>
+        <a class="BurgerKatPrioA">Science</a>
+        <a class="BurgerKatPrioA">Meinung</a>
+        <a class="BurgerKatPrioA">Games</a>
+        <a class="BurgerKatPrioA">Apps</a>
+        <a class="BurgerKatPrioA">Start-Up</a>
+        <a class="BurgerKatPrioA">Community</a>
+        <a class="BurgerMore BurgerKatPrioA">
+          <p>Mehr</p>
+        </a>
+      </nav>
+    </div>
+  </div>
+  <div class="headerSearch" id="headerSearch">
+    <button id="headerSearchBtn">Suche</button>
+    <input type="text" id="headerSearchText" placeholder="Zu suchenden Text Eingeben">
+  </div>
+</header>
+
+<!-- new THING FOR SEARCH ----- JUST FOR ME TO FIND THE CODE TO COPY INTO .PHP :) ------- PLS IGNORE THIS COMMENT :) ------>
+<div class="mainSearch" id="mainSearch">
+  <template id="searchArticleTemplate">
+    <article class="searchArticle" id="searchArticleTemplateID">
+      <div class="searchArticle">
+        <p class="searchArticle" id="searchArticleTemplateP">{{Description}}</p>
+      </div>
+    </article>
+  </template>
+</div>
+
+
+<div class="mainFlex">
+  <aside class="mainSide">
+    <section class="mainSideNewSection">
+      <div class="FeatureHeader">
+        <input type="hidden" class="FeatureHeaderHidden" id="FeatureHeaderHClick" value="FeatureHeaderH1">
+        <h3 class="FeatureHeaderH FeatureHeaderH1" id="FeatureHeaderH1">Feature</h3>
+        <h3 class="FeatureHeaderH" id="FeatureHeaderH2">Meistgelesen</h3>
+        <h3 class="FeatureHeaderH" id="FeatureHeaderH3">Neu</h3>
+      </div>
+      <div class="FeatureArticleGroup1" id="FeatureArticleGroup">
+        <template id="FeatureArticleTemplate">
+          <article class="FeatureArticle searchable">
+            <p class="FeatureArticleCat  CategoryP" id="FeatureArticleCategory">{{Category}}</p>
+            <h3 class="FeatureArticleH" id="FeatureArticleHeader">{{Header}}</h3>
+          </article>
+        </template>
+      </div>
+    </section>
+
+    <article class="mainSectionArticleBig searchable">
+      <!-- https://futurezone.at/myfuzo/futurezone-award-2020-das-sind-die-nominierten/401062806 -->
+      <img class="mainArticleBigImg" src="img/46-168010593.jpg" alt=""><!-- ist das offizielle bild zu dem artikel -->
+      <p class="mainSectionPCat  CategoryP">MYFUZO</p>
+      <h2 class="mainArticleBigH2">futurezone award 2020: Das sind die Nominierten</h2>
+      <p class="mainArticleBigPDescription">Die futurezone kürt auch in diesem Jahr die besten Projekte und Ideen des
+        Jahres. Jetzt stehen die Finalisten fest.</p>
+    </article>
+  </aside>
+
+  <div class="mainColumn">
+    <main>
+      <article class="mainArticleBig searchable">
+        <!-- https://futurezone.at/science/raetsel-um-galaxie-aus-999-prozent-dunkler-materie-geloest/401064447 -->
+        <img class="mainArticleBigImg" src="img/df44-bw_1024.jpg" alt="">
+        <p class="mainArticleBigPKategorie  CategoryP">SCIENCE</p>
+        <h2 class="mainArticleBigH2">Rätsel um Galaxie aus 99,9 Prozent dunkler Materie gelöst</h2>
+      </article>
+
+      <div class="mainDivArticleBig2">
+        <article class="mainArticleBig searchable">
+          <!-- https://futurezone.at/produkte/iphone-12-ist-da-das-koennen-die-neuen-modelle/401064312 -->
+          <img class="mainArticleBigImg" src="img/iphone12.jpg" alt="">
+          <p class="mainArticleBigPKategorie  CategoryP">PRODUKTE</p>
+          <h2 class="mainArticleBigH2">iPhone 12 ist da: Das können die neuen Modelle</h2>
+        </article>
+
+        <article class="mainArticleBig searchable">
+          <!-- https://futurezone.at/myfuzo/futurezone-award-2020-das-sind-die-nominierten/401062806 -->
+          <img class="mainArticleBigImg" src="img/46-168010593.jpg" alt="">
+          <!-- ist das offizielle bild zu dem artikel -->
+          <p class="mainArticleBigPKategorie  CategoryP">MYFUZO</p>
+          <h2 class="mainArticleBigH2">futurezone award 2020: Das sind die Nominierten</h2>
+        </article>
+      </div>
+
+      <div class="mainDivArticleBig2">
+        <article class="mainArticleBig searchable">
+          <!-- https://futurezone.at/digital-life/das-steckt-hinter-den-seltsamen-codes-auf-amazon-paketen/401068605 -->
+          <img class="mainArticleBigImg" src="img/amazon.jpg" alt=""><!-- ist das offizielle bild zu dem artikel -->
+          <p class="mainArticleBigPKategorie  CategoryP">Digital Life</p>
+          <h2 class="mainArticleBigH2">Das steckt hinter den seltsamen Codes auf Amazon-Paketen</h2>
+        </article>
+
+        <article class="mainArticleBig searchable">
+          <!-- https://futurezone.at/science/einfacher-trick-macht-solarzellen-doppelt-so-effektiv/401068845 -->
+          <img class="mainArticleBigImg" src="img/solarzellen.jpg" alt="">
+          <!-- ist das offizielle bild zu dem artikel -->
+          <p class="mainArticleBigPKategorie  CategoryP">Science</p>
+          <h2 class="mainArticleBigH2">Einfacher Trick macht Solarzellen doppelt so effektiv</h2>
+        </article>
+      </div>
+    </main>
+
+    <section class="sectionNews">
+      <div class="sectionNewsHeaderDiv">
+        <h4 class="sectionsNewsH4">Aktuelles:</h4>
+        <img class="sectionNewsHImg" src="img/play_arrow-24px.svg" alt="">
+      </div>
+      <div class="sectionNewsMainDiv">
+        <article class="sectionNewsArticle searchable">
+          <!-- https://futurezone.at/science/raetsel-um-galaxie-aus-999-prozent-dunkler-materie-geloest/401064447 -->
+          <p class="sectionNewsP  CategoryP">SCIENCE</p>
+          <div class="sectionNewsArticleDiv">
+            <div>
+              <h3 class="sectionNewsH2">Rätsel um Galaxie aus 99,9 Prozent dunkler Materie gelöst</h3>
+              <p class="sectionNewsPDescription">Niederländische Forscher haben die Kugelsternhaufen um die Galaxie
+                erneut gezählt.</p>
+            </div>
+
+            <img class="sectionNewsImg" src="img/df44-bw_1024.jpg" alt="">
+          </div>
+        </article>
+
+        <article class="sectionNewsArticle searchable">
+          <!-- https://futurezone.at/produkte/iphone-12-ist-da-das-koennen-die-neuen-modelle/401064312 -->
+          <p class="sectionNewsP  CategoryP">PRODUKTE</p>
+          <div class="sectionNewsArticleDiv">
+            <div>
+              <h3 class="sectionNewsH2">iPhone 12 ist da: Das können die neuen Modelle</h3>
+              <p class="sectionNewsPDescription">Apple hat am Dienstag das iPhone 12 sowie das iPhone 12 Pro
+                vorgestellt.</p>
+            </div>
+
+            <img class="sectionNewsImg" src="img/iphone12.jpg" alt="">
+          </div>
+        </article>
+
+        <article class="sectionNewsArticle searchable">
+          <!-- https://futurezone.at/myfuzo/futurezone-award-2020-das-sind-die-nominierten/401062806 -->
+          <p class="sectionNewsP  CategoryP">MYFUZO</p>
+          <div class="sectionNewsArticleDiv">
+            <div>
+              <h3 class="sectionNewsH2">futurezone award 2020: Das sind die Nominierten</h3>
+              <p class="sectionNewsPDescription">Die futurezone kürt auch in diesem Jahr die besten Projekte und Ideen
+                des Jahres. Jetzt stehen die Finalisten fest.</p>
+
+            </div>
+
+            <img class="sectionNewsImg" src="img/46-168010593.jpg" alt="">
+            <!-- ist das offizielle bild zu dem artikel -->
+          </div>
+        </article>
+
+        <article class="sectionNewsArticle searchable">
+          <!-- https://futurezone.at/digital-life/das-steckt-hinter-den-seltsamen-codes-auf-amazon-paketen/401068605 -->
+          <p class="sectionNewsP  CategoryP">Digital Life</p>
+          <div class="sectionNewsArticleDiv">
+            <div>
+              <h3 class="sectionNewsH2">Das steckt hinter den seltsamen Codes auf Amazon-Paketen</h3>
+              <p class="sectionNewsPDescription">Von A1 bis E6: Fast jeder Karton einer Amazon-Sendung ist mit so einer
+                Zeichen-Kombination versehen.</p>
+
+            </div>
+            <img class="sectionNewsImg" src="img/amazon.jpg" alt=""><!-- ist das offizielle bild zu dem artikel -->
+
+          </div>
+        </article>
+
+        <article class="sectionNewsArticle searchable">
+          <!-- https://futurezone.at/science/einfacher-trick-macht-solarzellen-doppelt-so-effektiv/401068845 -->
+          <p class="sectionNewsP  CategoryP">Science</p>
+          <div class="sectionNewsArticleDiv">
+            <div>
+              <h3 class="sectionNewsH2">Einfacher Trick macht Solarzellen doppelt so effektiv</h3>
+              <p class="sectionNewsPDescription">Forscher haben einen simplen Weg gefunden, mit dem Solarzellen um 125
+                Prozent mehr Licht einfangen.</p>
+
+            </div>
+
+            <img class="sectionNewsImg" src="img/solarzellen.jpg" alt=""><!-- ist das offizielle bild zu dem artikel -->
+          </div>
+        </article>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+
+<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+  window.ga = function () {
+    ga.q.push(arguments)
+  };
+  ga.q = [];
+  ga.l = +new Date;
+  ga('create', 'UA-XXXXX-Y', 'auto');
+  ga('set', 'anonymizeIp', true);
+  ga('set', 'transport', 'beacon');
+  ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>

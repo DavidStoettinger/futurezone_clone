@@ -1,0 +1,163 @@
+/*
+wanted to import this file into main.css to make that cleaner and easier to read
+@import rule has to be placed on top of the css -> i dont know if legal because of boilerplate
+*/
+/*
+header{
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  background-color: #ffffff;
+  height: 3.5rem;
+  border-radius: 0.25rem;
+  max-width: 100%;
+  border: 0.1rem solid #c8c8c8;
+}
+
+@media only screen and (min-width: 37.5rem){
+  header{
+    height: 5.5rem;
+  }
+}
+
+ */
+/*Upper Div*/
+/*
+.headerDiv1{
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  max-width: 100%;
+  height: 3.5rem;
+}
+
+.headerImgLeft2Div{
+  display: none;
+}
+
+.headerImgRight1{
+  margin-right: 0.5rem;
+}
+
+.headerImgCenter{
+  height: 100%;
+}
+
+.headerImgLeft1{
+  margin-right: 0.5rem;
+  display: inherit;
+}
+.headerImgRight2Div{
+  display: flex;
+}
+
+.headerImgRight2Div p{
+  display:none;
+}
+
+
+@media only screen and (min-width: 37.5rem){
+  .headerImgRight2Div p{
+    display:inherit;
+  }
+
+  div.headerDiv1{
+    flex-direction: row-reverse;
+  }
+
+  .headerImgLeft2Div{
+    display: flex;
+  }
+  .headerImgRight1{
+    margin-right: inherit;
+  }
+  .headerImgLeft1{
+    display: none;
+  }
+}
+
+
+ */
+/*lower Div*/
+/*
+.headerDiv2{
+  max-width: 100%;
+}
+.BurgerImgDiv{
+  display: none;
+}
+.headerDiv2Div p{
+  margin-top: 0rem;
+  max-width: 100%;
+  display: none;
+}
+
+.BurgerKatPrioDiv{
+  margin-top: 0.25rem;
+  max-width: 100%;
+  height: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border-top: 0.1rem solid #c8c8c8;
+  padding-left: 0.25rem;
+  padding-top: 0.25rem;
+  padding-right: 0.25rem;
+}
+.BurgerKatPrioDiv p{
+  display: inherit;
+}
+
+@media only screen and (max-width: 37.5rem){
+
+
+  p.BurgerMore{
+    display: none;
+  }
+
+  div.headerDiv2{
+    width: 100%;
+    height: 100%;
+    position:fixed;
+    padding:0;
+    margin:0;
+
+    top:0;
+    left:0;
+
+ */
+    /*is dimgrey with a opacity of 0.5*//*
+    background-color: rgba(105, 105, 105, 0.5);
+
+    display: none;
+    flex-direction: row-reverse;
+  }
+  div.headerDiv2Div{
+    background-color: #ffffff;
+    min-width: 45%;
+    overflow-y: auto;
+    border-left: 0.1rem solid #c8c8c8;
+  }
+  div.BurgerImgDiv{
+    display: flex;
+    flex-direction: row-reverse;
+    border-bottom: 0.1rem solid #c8c8c8;
+  }
+  img.BurgerImg{
+    padding: 0.5rem;
+    width:2.5rem;
+  }
+  div.headerDiv2Div p{
+    border-bottom: 0.1rem solid #c8c8c8;
+    margin:0.025rem;
+    padding: 0.5rem;
+  }
+  div.headerDiv2Div p{
+    display: inherit;
+  }
+  div.BurgerKatPrioDiv{
+    display: none;
+  }
+}
+
+
+*/
